@@ -4,7 +4,6 @@ import {
   AiFillLinkedin,
   AiFillGithub,
   AiFillInstagram,
-  AiFillSkype,
 } from "react-icons/ai";
 import {BiLogoDiscordAlt} from "react-icons/bi"
 import Link from "next/link";

@@ -1,19 +1,18 @@
-"use client"
+"use client";
 import styles from "./heading.module.scss";
 import { MyLinks } from "./components/MyLinks";
 import { OutlineButton } from "../buttons/OutlineButton";
+import Link from "next/link";
 
 export const Heading = () => {
-  return (
-    <header className={styles.heading}>
-      <MyLinks />
-      {/* <div className={styles.headingButtons}> */}
-
-        <OutlineButton onClick={() => window.open("/resume.pdf")}>
-          My resume
-        </OutlineButton>
-      {/* </div> */}
-    </header>
-  );
+	return (
+		<header className={styles.heading}>
+			<MyLinks />
+			<OutlineButton>
+				<Link href="/resume" target="_blank" rel="noopener noreferrer">
+					My resume
+				</Link>
+			</OutlineButton>
+		</header>
+	);
 };
-

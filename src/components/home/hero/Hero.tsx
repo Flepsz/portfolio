@@ -25,7 +25,7 @@ export const Hero = () => {
           <Reveal>
             <p className={styles.aboutCopy}>
               I&apos;ve spent the last year building and scaling applications for
-              pretty cool company and individuals. I also create interesting self projects on my spare time.
+              Robert Bosch GmbH and individuals. I also create interesting self projects on my spare time.
               Let&apos;s connect!
             </p>
           </Reveal>

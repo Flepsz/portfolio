@@ -10,7 +10,6 @@ import { Contact } from "./contact/Contact";
 
 export const HomePage = () => {
   return (
-    <>
       <div id="root" className={styles.home}>
         <SideBar />
         <main id="main">
@@ -29,6 +28,5 @@ export const HomePage = () => {
           />
         </main>
       </div>
-    </>
   );
 };

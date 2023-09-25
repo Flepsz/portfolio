@@ -15,11 +15,11 @@ export const Experience = () => {
 const experience = [
   {
     title: "Robert Bosch GmbH",
-    position: "Apprentice Systems Developer",
+    position: "Digital Solutions",
     time: "Jan 2023 - Present",
     location: "Campinas, Brazil",
     description:
-      "I help build and scale core javascript functions and created test units. Also created reusable components for the front end and Azure API integrations.",
+      "I work on addressing systems-related challenges, developing innovative digital solutions, which often involve simplifying processes through automation or digital transformation.",
     tech: [
       "JavaScript",
       "TypeScript",

@@ -14,8 +14,7 @@ export const Contact = () => {
 				</Reveal>
 				<Reveal width="100%">
 					<p className={styles.contactCopy}>
-						Have an idea to discuss? Shoot me an email if you want to connect!
-						You can also find me on{" "}
+					Questions or collaboration ideas? Feel free to drop me an email. If you prefer networking, you can also catch up with me on {" "}
 						<Link
 							href="https://www.linkedin.com/in/felipepereiraa/"
 							target="_blank"
@@ -23,7 +22,7 @@ export const Contact = () => {
 						>
 							Linkedin
 						</Link>{" "}
-						if that&apos;s more your speed.
+						
 					</p>
 				</Reveal>
 				<Reveal width="100%">

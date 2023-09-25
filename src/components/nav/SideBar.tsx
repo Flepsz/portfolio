@@ -39,7 +39,7 @@ export const SideBar = () => {
           document.getElementById("main")?.scrollIntoView() :
           document.location.hash = '';
           }}>
-          FP<span>.</span>
+          F<span>.</span>
         </span>
         <motion.a
           initial={{ x: -70 }}

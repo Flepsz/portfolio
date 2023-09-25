@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio 📝
 
-## Getting Started
+![Portfolio Preview](link_to_portfolio_image.jpg)
 
-First, run the development server:
+Welcome to my personal portfolio repository! This project was created using Next.js with TypeScript and showcases my skills, projects, and experiences in a clean and interactive manner.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used 🚀
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js](https://nextjs.org/) - A React framework for building server-rendered React applications.
+- [TypeScript](https://www.typescriptlang.org/) - A statically typed superset of JavaScript.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [SCSS](https://sass-lang.com/) - A CSS preprocessor for adding more powerful features to your styles.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Used for adding interactivity and dynamic behavior.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features ✨
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Clean and responsive user interface (UI) for a seamless user experience (UX).
+- Display of my skills, projects, and experiences.
+- Easy navigation and organized content structure.
 
-## Learn More
+## License 📜
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the [MIT License](LICENSE.md).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgments 🙏
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Made with ❤️ by Felipe Pereira 👨‍💻
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to explore my portfolio and get in touch with me for any inquiries or collaborations!

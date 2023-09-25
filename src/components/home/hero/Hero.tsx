@@ -5,7 +5,6 @@ import { StandardButton } from "@/components/buttons/StandardButton";
 import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
-import Profile from "@/public/flp.jpg";
 
 export const Hero = () => {
   return (
@@ -43,7 +42,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.4 }}>
           <Image
             className={styles.profile}
-            src={Profile}
+            src="/flp.jpg"
             priority
             alt="Luis Felipe Pereira | FullStack Developer"
             width={250}

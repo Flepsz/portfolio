@@ -9,7 +9,11 @@ export const Heading = () => {
 		<header className={styles.heading}>
 			<MyLinks />
 			<OutlineButton>
-				<Link href="/resume" target="_blank" rel="noopener noreferrer">
+				<Link
+					href="/resume.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					My resume
 				</Link>
 			</OutlineButton>

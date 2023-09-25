@@ -72,14 +72,6 @@ export const Project = ({
 							rotate: hovered ? "2deg" : "0deg",
 						}}
 					/>
-					{/* <img
-            src={imgSrc}
-            alt={`An image of the ${title} project.`}
-            style={{
-              width: hovered ? "90%" : "85%",
-              rotate: hovered ? "2deg" : "0deg",
-            }}
-          /> */}
 				</div>
 				<div className={styles.projectCopy}>
 					<Reveal width="100%">

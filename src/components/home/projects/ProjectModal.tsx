@@ -58,11 +58,6 @@ export const ProjectModal = ({
 					height={400}
 					className={styles.modalImage}
 				/>
-				{/* <img
-          className={styles.modalImage}
-          src={imgSrc}
-          alt={`An image of the ${title} project.`}
-        /> */}
 				<div className={styles.modalContent}>
 					<h4>{title}</h4>
 					<div className={styles.modalTech}>{tech.join(" - ")}</div>

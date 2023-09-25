@@ -13,12 +13,12 @@ export const Hero = () => {
         <div className={styles.copyWrapper}>
           <Reveal>
             <h1 className={styles.title}>
-              Hi, I&apos;m Felipe<span>.</span>
+              Hi, I&apos;m Felipe<span>,</span>
             </h1>
           </Reveal>
           <Reveal>
             <h2 className={styles.subTitle}>
-              I&apos;m a <span>FullStack Developer</span>
+              a <span>FullStack Developer</span>
             </h2>
           </Reveal>
           <Reveal>

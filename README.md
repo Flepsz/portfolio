@@ -1,6 +1,6 @@
 # Personal Portfolio 📝
 
-![Portfolio Preview](link_to_portfolio_image.jpg)
+![Portfolio Preview](preview.png)
 
 Welcome to my personal portfolio repository! This project was created using Next.js with TypeScript and showcases my skills, projects, and experiences in a clean and interactive manner.
 

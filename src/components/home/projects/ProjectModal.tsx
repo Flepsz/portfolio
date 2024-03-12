@@ -15,7 +15,7 @@ interface Props {
 	code: string;
 	projectLink: string;
 	tech: string[];
-	modalContent: JSX.Element;
+	modalContent: string[];
 }
 
 export const ProjectModal = ({
@@ -62,7 +62,11 @@ export const ProjectModal = ({
 					<h4>{title}</h4>
 					<div className={styles.modalTech}>{tech.join(" - ")}</div>
 
-					<div className={styles.suppliedContent}>{modalContent}</div>
+					<div className={styles.suppliedContent}>
+						{modalContent.map((item) => (
+							<p key={item}>{item}</p>
+						))}
+					</div>
 
 					<div className={styles.modalFooter}>
 						<p className={styles.linksText}>

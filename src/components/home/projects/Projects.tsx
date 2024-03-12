@@ -23,26 +23,15 @@ const projects = [
 		title: "Pandora",
 		imgSrc: pandora,
 		code: "https://github.com/Flepsz/Pandora",
-		projectLink: "",
+		projectLink: "pandorabank.vercel.app",
 		tech: ["React", "React Native", "NextJS", "Python", "Django Rest"],
 		description:
 			"Pandora, a digital banking solution equipped with a mobile app and a dedicated landing page for effective promotion.",
-		modalContent: (
-			<>
-				<p>
-					The Senai project showcases my full-stack capabilities, where I
-					single-handedly developed the entire application.
-				</p>
-				<p>
-					On the mobile front, the frontend is powered by React Native,
-					complemented by a Django Rest API backend.
-				</p>
-				<p>
-					Additionally, there&apos;s a dedicated homepage for promotional
-					purposes.
-				</p>
-			</>
-		),
+		modalContent: [
+			"The Senai project showcases my full-stack capabilities, where I single-handedly developed the entire application.",
+			"On the mobile front, the frontend is powered by React Native, complemented by a Django Rest API backend.",
+			"Additionally, there'apos;s a dedicated homepage for promotional purposes.",
+		],
 	},
 	{
 		title: "DragoByte",
@@ -52,14 +41,9 @@ const projects = [
 		tech: ["React", "ViteJS", "Javascript"],
 		description:
 			"My inaugural experience with React.js: Building an e-commerce platform for computer enthusiasts.",
-		modalContent: (
-			<>
-				<p>Project developed at SENAI as an evaluation.</p>
-				<p>
-					The tech stack revolves around Vite.js, while the product content is
-					sourced through the Mercado Livre API.
-				</p>
-			</>
-		),
+		modalContent: [
+			"Project developed at SENAI as an evaluation.",
+			"The tech stack revolves around Vite.js, while the product content is sourced through the Mercado Livre API.",
+		],
 	},
 ];

@@ -21,14 +21,13 @@ const experience = [
     description:
       "I work on addressing systems-related challenges, developing innovative digital solutions, which often involve simplifying processes through automation or digital transformation.",
     tech: [
-      "JavaScript",
       "TypeScript",
-      "React.js",
       "Next.js",
       "React Native",
       "Python",
       "Django",
       "Java",
+      "Spring",
       "Git",
     ],
   },

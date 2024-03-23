@@ -15,10 +15,12 @@ datasource db {
 }
 
 model User {
-  id       Int     @id @default(autoincrement())
+  id       String  @id @default(cuid())
   email    String  @unique
+  password String
   github   String?
   linkedin String?
+  photo    String?
   role     String
 }
 

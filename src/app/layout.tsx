@@ -1,7 +1,7 @@
+import TrpcProvider from "@/utils/trpc-provider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import Provider from "@/utils/Provider";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="en">
 			<body className={poppins.className}>
-				<Provider>{children}</Provider>
+				<TrpcProvider>{children}</TrpcProvider>
 			</body>
 		</html>
 	);

@@ -1,15 +1,20 @@
-import { initTRPC } from '@trpc/server';
-import superjson from 'superjson';
+import { TRPCError, initTRPC } from "@trpc/server";
+import SuperJSON from "superjson";
+import { Context } from "./context";
 
-const t = initTRPC.create({
-  transformer: superjson,
-  errorFormatter({ shape }) {
-    return shape
-  },
+export const t = initTRPC.context<Context>().create({
+	transformer: SuperJSON,
 });
 
-export const router = t.router;
+const isAuthed = t.middleware(({ next, ctx }) => {
+	if (!ctx.user) {
+		throw new TRPCError({
+			code: "UNAUTHORIZED",
+			message: "You must be logged in to access this resource",
+		});
+	}
+	return next();
+});
 
-export const publicProcedure = t.procedure;
-
-export const mergeRouters = t.mergeRouters;
+export const pubicProcedure = t.procedure;
+export const protectedProcedure = t.procedure.use(isAuthed);

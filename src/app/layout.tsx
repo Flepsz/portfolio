@@ -1,7 +1,9 @@
-import TrpcProvider from "@/utils/trpc-provider";
 import "./globals.css";
+
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { Toaster } from "react-hot-toast";
+import TrpcProvider from "@/utils/trpc-provider";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -13,13 +15,21 @@ export const metadata: Metadata = {
 	description: "Felipe Portifólio's",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+	children,
+}: {
+	children: React.ReactNode;
+}) {
 	return (
-		<html lang="en">
-			<body className={poppins.className}>
-				<TrpcProvider>{children}</TrpcProvider>
+		<html lang="en" className="dark">
+			<body suppressHydrationWarning={true} className={poppins.className}>
+				<TrpcProvider>
+					<div>
+						{children}
+						<Toaster position="top-right" />
+					</div>
+				</TrpcProvider>
 			</body>
 		</html>
 	);
 }
-

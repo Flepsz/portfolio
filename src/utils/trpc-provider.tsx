@@ -3,15 +3,16 @@
 import { ReactNode, useState } from "react";
 import { trpc } from "./trpc";
 import { httpBatchLink, getFetch, loggerLink } from "@trpc/client";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import superjson from "superjson";
+import queryClient from "./query-client";
 
 export default function TrpcProvider({ children }: { children: ReactNode }) {
 	const url = process.env.NEXT_PUBLIC_VERCEL_URL
 		? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
 		: "http://localhost:3000/api/trpc/";
 
-	const [queryClient] = useState(() => new QueryClient());
 	const [trpcClient] = useState(() =>
 		trpc.createClient({
 			links: [
@@ -27,14 +28,17 @@ export default function TrpcProvider({ children }: { children: ReactNode }) {
 							credentials: "include",
 						});
 					},
-					transformer: superjson
+					transformer: superjson,
 				}),
 			],
 		})
 	);
 	return (
 		<trpc.Provider client={trpcClient} queryClient={queryClient}>
-			<QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+			<QueryClientProvider client={queryClient}>
+				{children}
+				<ReactQueryDevtools />
+			</QueryClientProvider>
 		</trpc.Provider>
 	);
 }

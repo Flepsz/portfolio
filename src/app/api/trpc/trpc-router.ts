@@ -1,7 +1,7 @@
-import authRouter from "./routers/auth";
 import { createContext } from "@/server/trpc/context";
+import { getMeHandler } from "@/server/trpc/controllers/user-controller";
+import authRouter from "@/server/trpc/routers/auth";
 import { t, protectedProcedure } from "@/server/trpc/trpc";
-import { getMeHandler } from "./controllers/user-controller";
 
 const healthCheckerRouter = t.router({
 	healthchecker: t.procedure.query(() => {

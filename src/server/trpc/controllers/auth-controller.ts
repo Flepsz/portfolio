@@ -3,7 +3,7 @@ import { TRPCError } from "@trpc/server";
 import jwt from "jsonwebtoken";
 import { cookies } from "next/headers";
 import { prisma } from "../prisma";
-import { CreateUserInput, LoginUserInput } from "../schema";
+import { CreateUserInput, LoginUserInput } from "../schemas";
 
 export const registerHandler = async ({
 	input,
@@ -15,9 +15,6 @@ export const registerHandler = async ({
 		const user = await prisma.user.create({
 			data: {
 				email: input.email,
-				photo: input.photo,
-				github: input.github,
-				linkedin: input.linkedin,
 				role: input.role,
 				password: hashedPassword,
 			},

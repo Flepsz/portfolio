@@ -1,6 +1,6 @@
 "use client";
 
-import { loginUserSchema } from "@/server/trpc/schema";
+import { loginUserSchema } from "@/server/trpc/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

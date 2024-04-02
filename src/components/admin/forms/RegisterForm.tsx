@@ -1,6 +1,6 @@
 "use client";
 
-import { createUserSchema, loginUserSchema } from "@/server/trpc/schema";
+import { createUserSchema } from "@/server/trpc/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -28,7 +28,7 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 
-import styles from "./forms.module.scss"
+import styles from "./forms.module.scss";
 
 export default function RegisterForm() {
 	const [submitting, setSubmitting] = useState(false);
@@ -39,9 +39,6 @@ export default function RegisterForm() {
 		mode: "all",
 		defaultValues: {
 			email: "",
-			photo: "",
-			github: "",
-			linkedin: "",
 			role: "",
 			password: "",
 			passwordConfirm: "",
@@ -79,7 +76,11 @@ export default function RegisterForm() {
 			</CardHeader>
 			<CardContent>
 				<Form {...form}>
-					<form id="register-hook-form" className="flex flex-col gap-4" onSubmit={form.handleSubmit(OnSubmit)}>
+					<form
+						id="register-hook-form"
+						className="flex flex-col gap-4"
+						onSubmit={form.handleSubmit(OnSubmit)}
+					>
 						<FormField
 							control={form.control}
 							name="email"
@@ -87,11 +88,7 @@ export default function RegisterForm() {
 								<FormItem>
 									<FormLabel>Email</FormLabel>
 									<FormControl>
-										<Input
-											placeholder="Your email"
-											type="email"
-											{...field}
-										/>
+										<Input placeholder="Your email" type="email" {...field} />
 									</FormControl>
 									<FormMessage />
 								</FormItem>
@@ -104,10 +101,7 @@ export default function RegisterForm() {
 								<FormItem>
 									<FormLabel>Role</FormLabel>
 									<FormControl>
-										<Input
-											placeholder="Type your role."
-											{...field}
-										/>
+										<Input placeholder="Type your role." {...field} />
 									</FormControl>
 									<FormMessage />
 								</FormItem>

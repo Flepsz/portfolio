@@ -1,4 +1,4 @@
-import { createUserSchema, loginUserSchema } from "../schema";
+import { createUserSchema, loginUserSchema } from "../schemas";
 import { t, pubicProcedure, protectedProcedure } from "../trpc";
 import {
 	loginHandler,

@@ -1,3 +1,9 @@
+# Back-End and Admin Dashboard in Process..;
+## Tech
+- tRPC
+- Prisma
+
+------
 # Personal Portfolio 📝
 
 ![Portfolio Preview](preview.png)

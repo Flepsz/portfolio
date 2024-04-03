@@ -1,4 +1,4 @@
-# Back-End and Admin Dashboard in Process..;
+# Back-End and Admin Dashboard in Development...
 ## Tech
 - tRPC
 - Prisma

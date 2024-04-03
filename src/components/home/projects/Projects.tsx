@@ -23,7 +23,7 @@ const projects = [
 		title: "Pandora",
 		imgSrc: pandora,
 		code: "https://github.com/Flepsz/Pandora",
-		projectLink: "pandorabank.vercel.app",
+		projectLink: "https://pandorabank.vercel.app/",
 		tech: ["React", "React Native", "NextJS", "Python", "Django Rest"],
 		description:
 			"Pandora, a digital banking solution equipped with a mobile app and a dedicated landing page for effective promotion.",

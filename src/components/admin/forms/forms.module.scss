@@ -1,4 +1,11 @@
 .card {
 	width: 35%;
 	margin: auto;
+
+}
+
+@media not all and (min-width: 1024px) {
+	.card {
+		width: 70%;
+	}
 }

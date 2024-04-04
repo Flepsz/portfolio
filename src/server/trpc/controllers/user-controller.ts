@@ -29,7 +29,7 @@ export const editUserHandler = async ({
 }) => {
 	try {
 		const userCtx = ctx.user;
-		const user = await prisma.user.update({
+		await prisma.user.update({
 			where: { id: userCtx?.id },
 			data: {
 				email: input.email,
@@ -41,10 +41,7 @@ export const editUserHandler = async ({
 		});
 
 		return {
-			status: "success",
-			data: {
-				user: user,
-			},
+			message: "User Edited with Success",
 		};
 	} catch (err: any) {
 		throw new TRPCError({

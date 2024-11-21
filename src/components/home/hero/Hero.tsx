@@ -42,7 +42,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.4 }}>
           <Image
             className={styles.profile}
-            src="/flp.jpg"
+            src="https://github.com/Flepsz.png"
             priority
             alt="Luis Felipe Pereira | FullStack Developer"
             width={250}
